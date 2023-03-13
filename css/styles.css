@@ -112,8 +112,18 @@ ul.menu {
   color: var(--accent-color);
 }
 .hero-section {
-  background: var(--main-color);
   padding: 188px 0px;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-1.jpg);
+  max-width: 1440px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
 }
 .hero-title {
   font-size: 56px;
@@ -153,6 +163,18 @@ ul.menu {
 .features-list-item {
   width: 264px;
 }
+.features-icon {
+  width: 64px;
+  height: 64px;
+}
+.features-icon-box {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-secondary-color);
+  border-radius: 1px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .features-section {
   padding: 120px 0px;
 }
@@ -162,6 +184,7 @@ ul.menu {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 .features-text {
   line-height: 1.5;
@@ -193,7 +216,7 @@ ul.menu {
 }
 .team-box {
   text-align: center;
-  padding: 32px 0px;
+  margin-bottom: 8px;
 }
 .team-item {
   background: var(--third-color);
@@ -201,9 +224,117 @@ ul.menu {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.our-team-icons {
+  width: 16px;
+  height: 16px;
+  fill: var(--background-main-color);
+}
+.icons-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--logo-color);
+  margin-bottom: 32px;
+}
+.icons-circle:hover,
+.icons-circle:focus {
+  background-color: #404bbf;
+  cursor: pointer;
+}
+.icons-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  align-items: center;
+  justify-content: center;
+}
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid #404bbf;
+}
+.customers-icons {
+  fill: #8e8f99;
+}
+.customers-item:hover .customers-icons,
+.customers-item:focus .customers-icons {
+  fill: #404bbf;
+}
+.yaco-icon {
+  width: 41px;
+  height: 46.97px;
+}
+.company-1-icon {
+  width: 40px;
+  height: 52px;
+}
+.company-2-icon {
+  width: 44px;
+  height: 41px;
+}
+.foster-peters-icon {
+  width: 84px;
+  height: 41px;
+}
+.group-4-icon {
+  width: 63px;
+  height: 45px;
+}
+.tag-line-icon {
+  width: 94px;
+  height: 44px;
+}
 .footer {
   background: var(--main-color);
   padding: 100px 0px;
+}
+.footer-container {
+  display: flex;
+  gap: 120px;
+}
+.footer-paragraph {
+  color: var(--footer-text-color);
+}
+.footer-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-icons-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #434455;
+}
+.footer-icons-circle:hover,
+.footer-icons-circle:focus {
+  background-color: #31d0aa;
+  cursor: pointer;
+}
+.footer-icons {
+  fill: var(--background-buttons-color);
+  width: 24px;
+  height: 24px;
 }
 .section-paragraph-of-footer {
   line-height: 1.5;
@@ -241,6 +372,12 @@ ul.menu {
   row-gap: 48px;
   margin-top: 72px;
 }
+.img-list-item:hover,
+.img-list-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
+}
 .img-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -264,4 +401,6 @@ ul.menu {
 .portfolio-button:focus {
   background: var(--accent-color);
   color: var(--third-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
