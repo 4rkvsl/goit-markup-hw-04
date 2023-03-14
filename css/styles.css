@@ -216,7 +216,7 @@ ul.menu {
 }
 .team-box {
   text-align: center;
-  margin-bottom: 8px;
+  padding: 32px 0;
 }
 .team-item {
   background: var(--third-color);
@@ -237,7 +237,6 @@ ul.menu {
   height: 40px;
   border-radius: 50%;
   background-color: var(--logo-color);
-  margin-bottom: 32px;
 }
 .icons-circle:hover,
 .icons-circle:focus {
@@ -246,8 +245,8 @@ ul.menu {
 }
 .icons-soc-list {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  margin-top: 8px;
 }
 .customers-section {
   padding-top: 120px;
@@ -271,35 +270,13 @@ ul.menu {
   border: 1px solid #404bbf;
 }
 .customers-icons {
+  width: 104px;
+  height: 56px;
   fill: #8e8f99;
 }
 .customers-item:hover .customers-icons,
 .customers-item:focus .customers-icons {
   fill: #404bbf;
-}
-.yaco-icon {
-  width: 41px;
-  height: 46.97px;
-}
-.company-1-icon {
-  width: 40px;
-  height: 52px;
-}
-.company-2-icon {
-  width: 44px;
-  height: 41px;
-}
-.foster-peters-icon {
-  width: 84px;
-  height: 41px;
-}
-.group-4-icon {
-  width: 63px;
-  height: 45px;
-}
-.tag-line-icon {
-  width: 94px;
-  height: 44px;
 }
 .footer {
   background: var(--main-color);
@@ -307,9 +284,14 @@ ul.menu {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+.footer-soc-box {
+  margin-left: 120px;
 }
 .footer-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--footer-text-color);
 }
 .footer-list {
@@ -324,7 +306,7 @@ ul.menu {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #434455;
+  background-color: rgba(217, 217, 217, 0.1);
 }
 .footer-icons-circle:hover,
 .footer-icons-circle:focus {
@@ -386,6 +368,7 @@ ul.menu {
   margin-bottom: 8px;
 }
 .img-list-text {
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
