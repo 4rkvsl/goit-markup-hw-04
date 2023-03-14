@@ -137,6 +137,7 @@ ul.menu {
   text-align: center;
 }
 .modal-btn {
+  border: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -290,6 +291,7 @@ ul.menu {
   margin-left: 120px;
 }
 .footer-paragraph {
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
